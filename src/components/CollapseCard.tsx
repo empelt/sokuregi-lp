@@ -1,6 +1,5 @@
 import { ReactNode } from 'react'
 import CardBase from 'components/CardBase'
-import Image from 'next/image'
 import useCollapse from 'react-collapsed'
 import useWindowSize from 'hooks/useWindowSize'
 
@@ -35,7 +34,7 @@ export default function CollapseCard({ imageSrc, title, text, children }: Props)
                   </button>
                 </div>
               </div>
-              <Image src={imageSrc} alt={title} fill className={'!relative !w-20 rounded-3xl'} />
+              <img src={imageSrc} alt={title} className={'h-20 w-20 rounded-3xl'} />
             </div>
             <section {...getCollapseProps()}>{children}</section>
           </div>
@@ -63,12 +62,7 @@ export default function CollapseCard({ imageSrc, title, text, children }: Props)
                 </button>
               </div>
             </div>
-            <Image
-              src={imageSrc}
-              alt={title}
-              fill
-              className={'!relative !h-28 !w-28 rounded-3xl'}
-            />
+            <img src={imageSrc} alt={title} className={'h-28 w-28 rounded-3xl'} />
           </div>
           <section {...getCollapseProps()}>{children}</section>
         </div>
