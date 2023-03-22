@@ -3,53 +3,40 @@ import Image from 'next/image'
 import useWindowSize from 'hooks/useWindowSize'
 
 type Props = {
-  tag: string
+  imageSrc: string
   title: string
   text: string
 }
 
-export default function ExplanationCard({ tag, title, text }: Props) {
+export default function ExplanationCard({ imageSrc, title, text }: Props) {
   const [width] = useWindowSize()
+  const isMobile = width <= 1000
 
-  if (width <= 1000) {
+  if (isMobile) {
     return (
       <CardBase>
-        <div className="flex flex-col gap-4">
-          <div className="w-fit rounded-3xl p-2 pl-4 pr-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-            <p className="font-bold">{tag}</p>
+        <div className="flex gap-5">
+          <Image src={imageSrc} alt={title} width={100} height={100} className={'rounded-3xl'} />
+          <div className="flex flex-col justify-center">
+            <p className="font-bold">{title}</p>
+            <p>{text}</p>
           </div>
-          <p className="text-2xl font-bold">{title}</p>
-          <p>{text}</p>
         </div>
       </CardBase>
     )
   }
+
   return (
-    <div className="w-96">
+    <div className="max-w-[600px]">
       <CardBase>
-        <div className="flex flex-col gap-4">
-          <div className="w-fit rounded-3xl p-2 pl-4 pr-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-            <p className="font-bold">{tag}</p>
+        <div className="flex items-center gap-5">
+          <Image src={imageSrc} alt={title} fill className={'!relative !h-28 !w-28 rounded-3xl'} />
+          <div className="flex flex-col justify-center">
+            <p className="mb-2 text-center text-2xl font-bold">{title}</p>
+            <p className="text-lg">{text}</p>
           </div>
-          <p className="text-2xl font-bold">{title}</p>
-          <p>{text}</p>
         </div>
       </CardBase>
     </div>
-  )
-}
-
-export function ExplanationCardWithMovie({ tag, title, text }: Props) {
-  return (
-    <CardBase>
-      <div className="flex flex-col gap-4">
-        <div className="w-fit rounded-3xl p-2 pl-4 pr-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-          <p className="font-bold">{tag}</p>
-        </div>
-        <p className="text-2xl font-bold">{title}</p>
-        <p>{text}</p>
-        <Image src={'/SokuREGI.gif'} fill alt="movie" className="!relative rounded-2xl" />
-      </div>
-    </CardBase>
   )
 }

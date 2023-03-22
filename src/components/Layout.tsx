@@ -38,9 +38,9 @@ export function Section({ children, title, text }: SectionProps) {
     )
   }
   return (
-    <div className="mt-60 flex flex-col items-center gap-3">
+    <div className="flex flex-col items-center gap-5">
       <p className="text-5xl font-bold">{title}</p>
-      <p className="mb-12 text-xl">{text}</p>
+      <p className="mb-12 text-2xl font-bold">{text}</p>
       {children}
     </div>
   )
