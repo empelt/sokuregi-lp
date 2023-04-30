@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import useWindowSize from 'hooks/useWindowSize'
 
 export default function Footer() {
@@ -9,7 +8,7 @@ export default function Footer() {
     return (
       <div className="p-6">
         <div className="flex flex-col gap-6">
-          <Image src={'/images/logo.png'} alt="sokuregi logo" width={250} height={50} />
+          <img src={'/images/logo.png'} alt="sokuregi logo" width={250} height={50} />
           <div className="flex justify-evenly">
             <div>
               <p className="mb-4 text-lg font-bold">SERVICE</p>
@@ -50,7 +49,7 @@ export default function Footer() {
           <p className="text-xl">プライバシーポリシー</p>
         </div>
         <div className="flex items-center gap-6">
-          <Image src={'/images/logo.png'} alt="sokuregi logo" width={250} height={50} />
+          <img src={'/images/logo.png'} alt="sokuregi logo" width={250} height={50} />
           <p className="text-xl">&copy; {new Date().getFullYear()} PhatecHs Co., Ltd</p>
         </div>
       </div>

@@ -1,5 +1,4 @@
 import CardBase from 'components/CardBase'
-import Image from 'next/image'
 import useWindowSize from 'hooks/useWindowSize'
 
 type Props = {

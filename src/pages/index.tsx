@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import PointCard, { PointCardWithMovie } from 'components/PointCard'
 import ExplanationCard from 'components/ExplanationCard'
 import Layout, { Section } from 'components/Layout'
@@ -23,7 +22,7 @@ export default function Home() {
           </div>
 
           <div>
-            <Image src={'/images/top.png'} alt={'top'} fill className="!relative" />
+            <img src={'/images/top.png'} alt={'top'} className="!relative" />
           </div>
 
           <div className="flex flex-col gap-6">
@@ -71,7 +70,7 @@ export default function Home() {
             <p className="pl-4 pr-4">店舗への導入に関する資料請求・ご質問等はこちら</p>
             <div className="flex gap-8">
               <div className="flex flex-col items-center">
-                <Image
+                <img
                   src={'/images/ic_mail.png'}
                   alt={'contact'}
                   width={100}
@@ -81,7 +80,7 @@ export default function Home() {
                 <p className="font-bold">CONTACT</p>
               </div>
               <div className="flex flex-col items-center">
-                <Image
+                <img
                   src={'/images/ic_web.png'}
                   alt={'contact'}
                   width={100}
@@ -112,7 +111,7 @@ export default function Home() {
         </div>
 
         <div>
-          <Image src={'/images/top.png'} alt={'top'} fill className="!relative" />
+          <img src={'/images/top.png'} alt={'top'} className="!relative" />
         </div>
 
         <div className="flex  flex-wrap justify-center gap-16">
@@ -161,7 +160,7 @@ export default function Home() {
             <Section title="導入に関するご相談/お問い合わせ" text="他と違いを作るDX導入の実現を">
               <div className="flex gap-8">
                 <div className="flex flex-col items-center">
-                  <Image
+                  <img
                     src={'/images/ic_mail.png'}
                     alt={'mail'}
                     width={100}
@@ -171,7 +170,7 @@ export default function Home() {
                   <p className="font-bold">CONTACT</p>
                 </div>
                 <div className="flex flex-col items-center">
-                  <Image
+                  <img
                     src={'/images/ic_web.png'}
                     alt={'contact'}
                     width={100}

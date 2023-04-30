@@ -16,7 +16,7 @@ export default function CollapseCard({ imageSrc, title, text, children }: Props)
   const isMobile = width <= 1000
   if (isMobile) {
     return (
-      <div className="w-96">
+      <div className="max-w-96">
         <CardBase>
           <div className="flex flex-col gap-4">
             <p className="text-2xl font-bold">{title}</p>

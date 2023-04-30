@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import PointCard, { PointCardWithMovie } from 'components/PointCard'
 import CollapseCard from 'components/CollapseCard'
 import ExplanationCard from 'components/ExplanationCard'
@@ -23,7 +22,7 @@ export default function Business() {
           </div>
 
           <div>
-            <Image src={'/images/top.png'} alt={'top'} fill className="!relative" />
+            <img src={'/images/top.png'} alt={'top'} className="!relative" />
           </div>
 
           <div className="flex flex-col items-center gap-3">
@@ -39,7 +38,7 @@ export default function Business() {
                   <p className="font-bold">
                     SokuREGIでは、レジ作業で多くの時間を割いている登録作業を削減することができます。
                   </p>
-                  <Image
+                  <img
                     src={'/images/ic_mail.png'}
                     alt={'chart'}
                     width={100}
@@ -70,9 +69,12 @@ export default function Business() {
               >
                 <div className="flex flex-col items-center gap-4">
                   <p className="font-bold">
-                    SokuREGIでは、レジ作業で多くの時間を割いている登録作業を削減することができます。
+                    従来の買い物の流れでは、どうしても商品を移動する手間が発生してしまいます。レジでの商品移動は、待ち時間を発生させる一番の原因です。袋詰めでの移動は、お客様に負担をかけてしまうことや、袋詰めのための場所を広く用意する必要が出てきます。
                   </p>
-                  <Image
+                  <p className="font-bold">
+                    また、商品を何度も移動することで、商品を傷める原因となったり、従業員の精神的な負担となりえます。
+                  </p>
+                  <img
                     src={'/images/ic_mail.png'}
                     alt={'chart'}
                     width={100}
@@ -80,11 +82,22 @@ export default function Business() {
                     className={'rounded-3xl'}
                   />
                   <p className="font-bold">
-                    小売店で多く導入されているセミセルフレジは、支払いのみをセルフで行うため、作業時間の大半を占める登録作業は依然として残ります。単体では、限定的な効果しか期待できません。
+                    SokuREGIでは、レジバックカゴを利用することで商品を一度も移動させずにお買い物いただけます。
                   </p>
-                  <p className="font-bold">
-                    SokuREGIとセルフレジを組み合わせることで、支払いまで一貫してDXを実現することも可能です。
-                  </p>
+                  <div className="flex flex-col gap-2 self-start">
+                    <div className="flex gap-2">
+                      <img src={'/images/ic_check.png'} alt={'check'} className={'h-6 w-6'} />
+                      <p className="font-bold">お客様の袋詰め作業を無くす</p>
+                    </div>
+                    <div className="flex gap-2">
+                      <img src={'/images/ic_check.png'} alt={'check'} className={'h-6 w-6'} />
+                      <p className="font-bold">従業員の商品移動の身体的負担を減らす</p>
+                    </div>
+                    <div className="flex gap-2">
+                      <img src={'/images/ic_check.png'} alt={'check'} className={'h-6 w-6'} />
+                      <p className="font-bold">従業員が商品に触れる精神的負担を減らす</p>
+                    </div>
+                  </div>
                 </div>
               </CollapseCard>
             </div>
@@ -168,7 +181,7 @@ export default function Business() {
             <p className="pl-4 pr-4">他と違いを作るDX導入の実現を</p>
             <div className="flex gap-8">
               <div className="flex flex-col items-center">
-                <Image
+                <img
                   src={'/images/ic_mail.png'}
                   alt={'mail'}
                   width={100}
@@ -178,7 +191,7 @@ export default function Business() {
                 <p className="font-bold">CONTACT</p>
               </div>
               <div className="flex flex-col items-center">
-                <Image
+                <img
                   src={'/images/ic_web.png'}
                   alt={'contact'}
                   width={100}
@@ -198,7 +211,7 @@ export default function Business() {
   return (
     <Layout>
       <div className="flex flex-col gap-48 pl-5 pr-5 pt-12">
-        <Image src={'/images/top2.png'} alt={'chart'} fill className={'!relative'} />
+        <img src={'/images/top2.png'} alt={'chart'} className={'!relative'} />
 
         <Section title="何を解決できるのか" text="主に3つの課題解決をご提案させて頂きます">
           <div className="flex max-w-[1620px] flex-wrap justify-center gap-16">
@@ -211,7 +224,7 @@ export default function Business() {
                 <p className="font-bold">
                   SokuREGIでは、レジ作業で多くの時間を割いている登録作業を削減することができます。
                 </p>
-                <Image
+                <img
                   src={'/images/ic_mail.png'}
                   alt={'chart'}
                   width={100}
@@ -242,9 +255,12 @@ export default function Business() {
             >
               <div className="flex flex-col items-center gap-4">
                 <p className="font-bold">
-                  SokuREGIでは、レジ作業で多くの時間を割いている登録作業を削減することができます。
+                  従来の買い物の流れでは、どうしても商品を移動する手間が発生してしまいます。レジでの商品移動は、待ち時間を発生させる一番の原因です。袋詰めでの移動は、お客様に負担をかけてしまうことや、袋詰めのための場所を広く用意する必要が出てきます。
                 </p>
-                <Image
+                <p className="font-bold">
+                  また、商品を何度も移動することで、商品を傷める原因となったり、従業員の精神的な負担となりえます。
+                </p>
+                <img
                   src={'/images/ic_mail.png'}
                   alt={'chart'}
                   width={100}
@@ -252,11 +268,22 @@ export default function Business() {
                   className={'rounded-3xl'}
                 />
                 <p className="font-bold">
-                  小売店で多く導入されているセミセルフレジは、支払いのみをセルフで行うため、作業時間の大半を占める登録作業は依然として残ります。単体では、限定的な効果しか期待できません。
+                  SokuREGIでは、レジバックカゴを利用することで商品を一度も移動させずにお買い物いただけます。
                 </p>
-                <p className="font-bold">
-                  SokuREGIとセルフレジを組み合わせることで、支払いまで一貫してDXを実現することも可能です。
-                </p>
+                <div className="flex flex-col gap-2 self-start">
+                  <div className="flex gap-2">
+                    <img src={'/images/ic_check.png'} alt={'check'} className={'h-6 w-6'} />
+                    <p className="font-bold">お客様の袋詰め作業を無くす</p>
+                  </div>
+                  <div className="flex gap-2">
+                    <img src={'/images/ic_check.png'} alt={'check'} className={'h-6 w-6'} />
+                    <p className="font-bold">従業員の商品移動の身体的負担を減らす</p>
+                  </div>
+                  <div className="flex gap-2">
+                    <img src={'/images/ic_check.png'} alt={'check'} className={'h-6 w-6'} />
+                    <p className="font-bold">従業員が商品に触れる精神的負担を減らす</p>
+                  </div>
+                </div>
               </div>
             </CollapseCard>
           </div>
@@ -344,7 +371,7 @@ export default function Business() {
             <Section title="導入に関するご相談/お問い合わせ" text="他と違いを作るDX導入の実現を">
               <div className="flex gap-8">
                 <div className="flex flex-col items-center">
-                  <Image
+                  <img
                     src={'/images/ic_mail.png'}
                     alt={'mail'}
                     width={100}
@@ -354,7 +381,7 @@ export default function Business() {
                   <p className="font-bold">CONTACT</p>
                 </div>
                 <div className="flex flex-col items-center">
-                  <Image
+                  <img
                     src={'/images/ic_web.png'}
                     alt={'contact'}
                     width={100}
