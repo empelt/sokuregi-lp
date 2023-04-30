@@ -13,9 +13,17 @@ module.exports = {
   },
   content: [],
   theme: {
+    colors: {
+      white: '#ffffff',
+      black: '#000000',
+      'download-red': '#F74F4F',
+    },
     extend: {
       maxWidth: {
         '1/2': '50%',
+      },
+      fontFamily: {
+        gothic: ['var(--font-gothic)'],
       },
     },
   },

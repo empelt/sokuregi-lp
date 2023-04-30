@@ -17,28 +17,33 @@ export default function Navbar() {
       <img src={'/images/logo.png'} alt="sokuregi logo" width={250} height={50} />
       <div className="flex items-center gap-4">
         <div>
-          <button className="rounded-full border-gray-300 bg-white px-5 py-2.5 font-bold text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+          <button className="border-gray-300 text-gray-900 hover:bg-gray-100 focus:ring-gray-200 rounded-full bg-white px-5 py-2.5 font-bold focus:outline-none focus:ring-4">
             特徴
           </button>
         </div>
         <div>
-          <button className="rounded-full border-gray-300 bg-white px-5 py-2.5 font-bold text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+          <button className="border-gray-300 text-gray-900 hover:bg-gray-100 focus:ring-gray-200 rounded-full bg-white px-5 py-2.5 font-bold focus:outline-none focus:ring-4">
             利用手順
           </button>
         </div>
         <div>
-          <button className="rounded-full border-gray-300 bg-white px-5 py-2.5 font-bold text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+          <button className="border-gray-300 text-gray-900 hover:bg-gray-100 focus:ring-gray-200 rounded-full bg-white px-5 py-2.5 font-bold focus:outline-none focus:ring-4">
             導入方法
           </button>
         </div>
         <div>
-          <button className="rounded-full border-gray-300 bg-white px-5 py-2.5 font-bold text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-            お問い合わせ
-          </button>
+          <a
+            href="https://forms.gle/gusk9HruYnXQg9jPA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="focus:ring-gray-200 rounded-full bg-white px-3 py-5 text-center text-sm font-bold shadow-[rgba(23,_38,_76,_0.19)_0px_0px_20px] focus:outline-none focus:ring-4"
+          >
+            ⚡お問い合わせ
+          </a>
         </div>
         <div>
-          <button className="rounded-full border-gray-300 bg-white px-5 py-2.5 font-bold text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-            アプリダウンロード
+          <button className="focus:ring-gray-200 rounded-full bg-download-red px-3 py-5 text-center text-sm font-bold text-white shadow-[rgba(23,_38,_76,_0.19)_0px_0px_20px] focus:outline-none focus:ring-4">
+            📱アプリをダウンロード
           </button>
         </div>
       </div>

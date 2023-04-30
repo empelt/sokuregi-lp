@@ -47,7 +47,7 @@ export function PointCardWithMovie({ tag, title, text }: Props) {
     return (
       <CardBase>
         <div className="flex flex-col gap-4">
-          <div className="w-fit rounded-3xl p-2 pl-4 pr-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+          <div className="w-fit rounded-3xl p-2 pl-4 pr-4 shadow-[0_0px_30px_rgb(0,0,0,0.12)]">
             <p className="font-bold">{tag}</p>
           </div>
           <p className="text-2xl font-bold">{title}</p>
@@ -62,7 +62,7 @@ export function PointCardWithMovie({ tag, title, text }: Props) {
     <div className="w-[500px]">
       <CardBase>
         <div className="flex flex-col gap-4">
-          <div className="w-fit rounded-3xl p-2 pl-4 pr-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+          <div className="w-fit rounded-3xl p-2 pl-4 pr-4 shadow-[0_0px_30px_rgb(0,0,0,0.12)]">
             <p className="font-bold">{tag}</p>
           </div>
           <p className="text-3xl font-bold">{title}</p>

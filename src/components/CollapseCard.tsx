@@ -27,7 +27,7 @@ export default function CollapseCard({ imageSrc, title, text, children }: Props)
                   <button
                     {...getToggleProps()}
                     className={
-                      'mt-2 rounded-full border-gray-300 bg-white px-5 py-2.5 font-bold text-gray-900 shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700'
+                      'border-gray-300 text-gray-900 hover:bg-gray-100 focus:ring-gray-200 mt-2 rounded-full bg-white px-5 py-2.5 font-bold shadow-[rgba(13,_38,_76,_0.19)_0px_0px_20px] focus:outline-none focus:ring-4'
                     }
                   >
                     {isExpanded ? '少なく表示' : '詳しく見る'}
@@ -55,7 +55,7 @@ export default function CollapseCard({ imageSrc, title, text, children }: Props)
                 <button
                   {...getToggleProps()}
                   className={
-                    'mt-2 rounded-full border-gray-300 bg-white px-5 py-2.5 font-bold text-gray-900 shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700'
+                    'border-gray-300 text-gray-900 hover:bg-gray-100 focus:ring-gray-200 mt-2 rounded-full bg-white px-5 py-2.5 font-bold shadow-[rgba(13,_38,_76,_0.19)_0px_0px_20px] focus:outline-none focus:ring-4'
                   }
                 >
                   {isExpanded ? '少なく表示' : '詳しく見る'}

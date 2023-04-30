@@ -3,6 +3,8 @@ import ExplanationCard from 'components/ExplanationCard'
 import Layout, { Section } from 'components/Layout'
 import useWindowSize from 'hooks/useWindowSize'
 import CardBase from 'components/CardBase'
+import DownloadButton from 'components/DownloadButton'
+import Router from 'next/router'
 
 export default function Home() {
   const [width] = useWindowSize()
@@ -13,7 +15,7 @@ export default function Home() {
       <Layout>
         <div className="flex flex-col gap-10 pl-5 pr-5 pt-12">
           <div className="m-auto w-56">
-            <p className="text-4xl font-bold">待ち時間0のレジアプリを体験しよう。</p>
+            <p className="font-gothic text-4xl">待ち時間0のレジアプリを体験しよう。</p>
           </div>
           <div className="pl-8 pr-8">
             <p className="text-xl font-bold">
@@ -69,7 +71,12 @@ export default function Home() {
             <p className="text-2xl font-bold">導入のご相談</p>
             <p className="pl-4 pr-4">店舗への導入に関する資料請求・ご質問等はこちら</p>
             <div className="flex gap-8">
-              <div className="flex flex-col items-center">
+              <div
+                className="flex flex-col items-center"
+                onClick={() =>
+                  window.open('https://forms.gle/gusk9HruYnXQg9jPA', '_blank', 'noreferrer')
+                }
+              >
                 <img
                   src={'/images/ic_mail.png'}
                   alt={'contact'}
@@ -77,9 +84,9 @@ export default function Home() {
                   height={100}
                   className={'rounded-3xl'}
                 />
-                <p className="font-bold">CONTACT</p>
+                <p className="mt-2 font-bold">CONTACT</p>
               </div>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center" onClick={() => Router.push('/business')}>
                 <img
                   src={'/images/ic_web.png'}
                   alt={'contact'}
@@ -87,7 +94,7 @@ export default function Home() {
                   height={100}
                   className={'rounded-3xl'}
                 />
-                <p className="font-bold">事業者向けLP</p>
+                <p className="mt-2 font-bold">事業者向けLP</p>
               </div>
             </div>
           </div>
@@ -159,7 +166,12 @@ export default function Home() {
           <CardBase>
             <Section title="導入に関するご相談/お問い合わせ" text="他と違いを作るDX導入の実現を">
               <div className="flex gap-8">
-                <div className="flex flex-col items-center">
+                <div
+                  className="flex cursor-pointer flex-col items-center"
+                  onClick={() =>
+                    window.open('https://forms.gle/gusk9HruYnXQg9jPA', '_blank', 'noreferrer')
+                  }
+                >
                   <img
                     src={'/images/ic_mail.png'}
                     alt={'mail'}
@@ -169,7 +181,10 @@ export default function Home() {
                   />
                   <p className="font-bold">CONTACT</p>
                 </div>
-                <div className="flex flex-col items-center">
+                <div
+                  className="flex cursor-pointer flex-col items-center"
+                  onClick={() => Router.push('/business')}
+                >
                   <img
                     src={'/images/ic_web.png'}
                     alt={'contact'}
@@ -177,7 +192,7 @@ export default function Home() {
                     height={100}
                     className={'rounded-3xl'}
                   />
-                  <p className="font-bold">利用者用サイト</p>
+                  <p className="font-bold">事業者向けLP</p>
                 </div>
               </div>
             </Section>
@@ -185,13 +200,5 @@ export default function Home() {
         </div>
       </div>
     </Layout>
-  )
-}
-
-function DownloadButton() {
-  return (
-    <div className="sticky bottom-4 rounded-full bg-red-400 p-6 text-center">
-      <p className="font-bold text-white">アプリをダウンロード</p>
-    </div>
   )
 }
