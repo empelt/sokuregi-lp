@@ -38,13 +38,7 @@ export default function Business() {
                   <p className="font-bold">
                     SokuREGIでは、レジ作業で多くの時間を割いている登録作業を削減することができます。
                   </p>
-                  <img
-                    src={'/images/ic_mail.png'}
-                    alt={'chart'}
-                    width={100}
-                    height={100}
-                    className={'rounded-3xl'}
-                  />
+                  <img src={'/images/pieChartSet.png'} alt={'chart'} className={'w-48'} />
                   <p className="font-bold">
                     小売店で多く導入されているセミセルフレジは、支払いのみをセルフで行うため、作業時間の大半を占める登録作業は依然として残ります。単体では、限定的な効果しか期待できません。
                   </p>
@@ -74,13 +68,7 @@ export default function Business() {
                   <p className="font-bold">
                     また、商品を何度も移動することで、商品を傷める原因となったり、従業員の精神的な負担となりえます。
                   </p>
-                  <img
-                    src={'/images/ic_mail.png'}
-                    alt={'chart'}
-                    width={100}
-                    height={100}
-                    className={'rounded-3xl'}
-                  />
+                  <img src={'/images/basket.png'} alt={'basket'} className={'w-96'} />
                   <p className="font-bold">
                     SokuREGIでは、レジバックカゴを利用することで商品を一度も移動させずにお買い物いただけます。
                   </p>
@@ -224,13 +212,7 @@ export default function Business() {
                 <p className="font-bold">
                   SokuREGIでは、レジ作業で多くの時間を割いている登録作業を削減することができます。
                 </p>
-                <img
-                  src={'/images/ic_mail.png'}
-                  alt={'chart'}
-                  width={100}
-                  height={100}
-                  className={'rounded-3xl'}
-                />
+                <img src={'/images/pieChartSet.png'} alt={'chart'} className={'w-48'} />
                 <p className="font-bold">
                   小売店で多く導入されているセミセルフレジは、支払いのみをセルフで行うため、作業時間の大半を占める登録作業は依然として残ります。単体では、限定的な効果しか期待できません。
                 </p>
@@ -260,13 +242,7 @@ export default function Business() {
                 <p className="font-bold">
                   また、商品を何度も移動することで、商品を傷める原因となったり、従業員の精神的な負担となりえます。
                 </p>
-                <img
-                  src={'/images/ic_mail.png'}
-                  alt={'chart'}
-                  width={100}
-                  height={100}
-                  className={'rounded-3xl'}
-                />
+                <img src={'/images/basket.png'} alt={'basket'} className={'w-96'} />
                 <p className="font-bold">
                   SokuREGIでは、レジバックカゴを利用することで商品を一度も移動させずにお買い物いただけます。
                 </p>
